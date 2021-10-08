@@ -28,6 +28,9 @@ nav{
     box-shadow: 0 0 6px 0 #0c0b0b;
     box-sizing: border-box;
 }
+.menuToggle{
+    display: none;
+}
 nav .logo {
     color: #fff;
     font-weight: 700;
