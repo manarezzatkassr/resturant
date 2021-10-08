@@ -28,9 +28,6 @@ nav{
     box-shadow: 0 0 6px 0 #0c0b0b;
     box-sizing: border-box;
 }
-nav .menuToggle i{
-    display: none;
-}
 nav .logo {
     color: #fff;
     font-weight: 700;
@@ -300,7 +297,7 @@ section{
         padding: 10px;
         width: 300px;
         margin-top: 10px;
-        margin-left: 30px;
+        margin-left: 20px;
     }
     section {
         padding: 100px 20px;
@@ -336,14 +333,6 @@ section{
     }
     nav .navigation{
         display: none;
-    }
-    .menuToggle{
-    position: relative;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    font-size: 30px;
-    color: white;
     }
     /*.navigation.active{
         width: 100%;
