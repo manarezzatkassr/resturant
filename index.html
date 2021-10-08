@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Complete Responsive Website Design </title>
     <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="libs/Fontawesome/css/all.min.css">
 </head>
 <body>
     <nav>
         <a  href="#" class="logo">Food<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"><i class="fas fa-bars"></i></div>
         <ul class="navigation">
             <li><a href="#banner">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -22,10 +24,11 @@
     <header class="banner" id="banner">
         <div class="content">
             <h2> Always Choose Good </h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Delectus culpa libero atque animi vitae natus,
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+            elit.Delectus culpa libero atque animi vitae natus,
             non iusto quam, possimus pariatur obcaecati? 
-            Ad, recusandae quia eos aut nesciunt cum atque blanditiis.</p>
+            Ad, recusandae quia eos aut nesciunt cum 
+            atque blanditiis.</p>
             <a href="#" class="btn"> Our Menu </a>
         </div>
     </header>
@@ -161,7 +164,7 @@
         <div class="content">
             <div class="box">
                 <div class="pic3">
-                    <img src="pics/pasta1.jpg">
+                    <img src="pics/person1.jpeg">
                 </div>
                 <div class="text">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -223,7 +226,7 @@
                 <input type="text" placeholder="Email">
             </div>
             <div class="inputbox">
-                <textarea placeholder="Name"></textarea>
+                <textarea placeholder="comment"></textarea>
             </div>
             <div class="inputbox">
                 <input class="btn2" type="submit" value="send">
@@ -233,5 +236,13 @@
     <div class="cright">
         <p> copyright 2021 <a href="#">Manar Ezzat.</a> All Right Reserved</p>
     </div>
+   <!-- <script type="text/javascript">
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+    </script>-->
 </body>
 </html>

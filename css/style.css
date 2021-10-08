@@ -13,6 +13,46 @@ p{
 body{
     min-height: 1800px;
 }
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 40px;
+    z-index: 3;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    transition: 0.5s;
+    background-color:  #ff0157;
+    width: 100%;
+    box-shadow: 0 0 6px 0 #0c0b0b;
+    box-sizing: border-box;
+}
+nav .logo {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+nav .logo span {
+    color: #09ff01;
+}
+nav .navigation {
+    position: relative;
+    display: flex;
+}
+nav .navigation li {
+    list-style: none;
+    margin-left: 30px;
+}
+nav .navigation li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+nav .navigation li a:hover{
+    color: #8b1e45;
+}
 .banner{
     position: relative;
     width: 100%;
@@ -54,44 +94,6 @@ body{
 .btn:hover{
     transition: 0.5s;
     letter-spacing: 6px;
-}
-nav{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px 40px;
-    z-index: 3;
-    display: flex;
-    justify-content:space-between ;
-    align-items: center;
-    transition: 0.5s;
-    background-color:  #ff0157;
-    width: 100%;
-    box-shadow: 0 0 6px 0 #0c0b0b;
-    box-sizing: border-box;
-}
-nav .logo {
-    color: #fff;
-    font-weight: 700;
-    font-size: 2em;
-    text-decoration: none;
-}
-nav .logo span {
-    color: #09ff01;
-}
-nav .navigation {
-    position: relative;
-    display: flex;
-}
-nav .navigation li {
-    list-style: none;
-    margin-left: 30px;
-}
-nav .navigation li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 300;
 }
 section{
     padding: 100px;
@@ -279,4 +281,85 @@ section{
     text-decoration: none;
     color: #ff0157;
     font-weight: 500;
+}
+@media (max-width: 991px)
+{
+    nav{
+        padding: 5px 20px;
+    }
+    .banner .content {
+        max-width: 700px;
+    }
+    .expert p , .menu p , .contact p {
+        text-align: center;
+    }
+    .contactForm {
+        padding: 10px;
+        width: 300px;
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+    section {
+        padding: 100px 20px;
+    }
+    .white .titleText, .white p {
+        text-align: center;
+    }
+    .menu .content .box .text h3, .expert h3 {
+        font-weight: 400;
+        color: #111;
+        text-align: center;
+    }
+    .col50 .imgbx img {
+        position: relative;
+        height: 350px;
+        margin-top: 20px;
+    }
+    .row {
+        position: relative;
+        width: 100%;
+        display: block;
+    }
+    .row .col50 {
+        position: relative;
+        width: 100%;
+    }
+    .banner .content p {
+        font-size: 15px;
+        text-align: center;
+    }
+    .banner .content h2 {
+        font-size: 45px;
+    }
+    nav .navigation{
+        display: none;
+    }
+    .menuToggle{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+    }
+    /*.navigation.active{
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 0;
+        left: 68px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+    .navigation li {
+        list-style: none;
+        margin-left: 0;
+    }
+    nav .navigation li a {
+        color: #111;
+        font-size: 1.6em;
+    }*/
 }
