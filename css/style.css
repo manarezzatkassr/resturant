@@ -28,7 +28,7 @@ nav{
     box-shadow: 0 0 6px 0 #0c0b0b;
     box-sizing: border-box;
 }
-nav .menuToggle{
+nav .menuToggle i{
     display: none;
 }
 nav .logo {
